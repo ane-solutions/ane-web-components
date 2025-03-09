@@ -11,7 +11,7 @@ function App() {
   return (
     <>
      <div>
-      <h1>COMPONENTS</h1>
+      <h1>COMPONENTS V1</h1>
       <div>
         {/* IMPORT COMPONENTS HERE */}
       </div>
