@@ -7,21 +7,26 @@ const Demo = () => {
       id: 1,
       name: "Jane Doe",
       role: "CEO & Founder",
-      photo: "/images/jane.jpg"
+      photo: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
       id: 2,
       name: "John Smith",
       role: "Lead Developer",
-      photo: "/images/john.jpg"
+      photo: "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
       id: 3,
       name: "Sarah Johnson",
       role: "UX Designer",
-      photo: "/images/sarah.jpg"
+      photo: "https://randomuser.me/api/portraits/women/68.jpg"
+    },
+    {
+      id: 4,
+      name: "Michael Brown",
+      role: "Marketing Director",
+      photo: "https://randomuser.me/api/portraits/men/75.jpg"
     }
-    // Add more team members as needed
   ];
 
   return (
@@ -31,3 +36,5 @@ const Demo = () => {
     </div>
   );
 };
+
+export default Demo;
