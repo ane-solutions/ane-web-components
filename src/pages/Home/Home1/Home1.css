@@ -1,45 +1,48 @@
 .home-container {
   min-height: 100vh;
-  min-width: 100vw;
-  padding: 2rem;
-  transition: background 1s ease;
-  margin: 0;
-  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.5s ease;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5;
 }
 
-.home-container.sunrise {
-  background: linear-gradient(135deg, 
-    #ffd6a5 0%, /* Warm peach */
-    #ffe4b5 100% /* Mellow yellow */
-  );
+.sunrise {
+  background-color: #ffc4b7;
 }
 
-.home-container.day {
-  background: linear-gradient(135deg, 
-    #b5e2ff 0%, /* Sky blue */
-    #fff1e6 100% /* Soft peach */
-  );
+.day {
+  background-color: #b7deff;
 }
 
-.home-container.sunset {
-  background: linear-gradient(135deg, 
-    #ffb199 0%, /* Coral orange */
-    #ffd4b8 100% /* Light salmon */
-  );
+.sunset {
+  background-color: #ffb7b7;
 }
 
-.home-container.night {
-  background: linear-gradient(135deg, 
-    #c4c6ff 0%, /* Periwinkle */
-    #e6e6ff 100% /* Soft lavender */
-  );
+.night {
+  background-color: #2a2a4f;
 }
 
 h1, p {
-  color: #333;
+  color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.home-container h1 {
+  color: #f0f0f0;
 }
