@@ -1,21 +1,13 @@
 import './App.css'
+import React from 'react';
+import Home2 from './pages/Home/Home2/Home2';
 
 function App() {
 
   return (
-    <>
-     <div>
-      <h1>COMPONENTS V1</h1>
-      <div>
-        {/* IMPORT COMPONENTS HERE */}
-      </div>
-      <h1>PAGES</h1>
-      <div>
-        {/* IMPORT PAGES HERE */}
-      </div>
-     </div>
-     
-    </>
+    <div className="App">
+      <Home2 />
+    </div>
   )
 }
 

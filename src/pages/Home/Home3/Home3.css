@@ -1,0 +1,186 @@
+.home3-container {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--hover-color);
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover {
+  opacity: 1;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-item.active {
+  opacity: 1;
+}
+
+.nav-item.active::after {
+  width: 100%;
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10vw;
+}
+
+.main-title {
+  font-size: 8vw;
+  line-height: 1;
+  margin-bottom: 60px;
+}
+
+.creative {
+  display: block;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.studio {
+  display: block;
+  font-weight: 700;
+}
+
+.section-content {
+  position: relative;
+  height: 200px;
+}
+
+.section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: var(--section-color);
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  opacity: 0.8;
+}
+
+.scroll-indicator {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.6;
+}
+
+.scroll-line {
+  width: 60px;
+  height: 1px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .main-title {
+    font-size: 12vw;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
+    left: 20px;
+  }
+}
