@@ -1,0 +1,45 @@
+.home-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 2rem;
+  transition: background 1s ease;
+  margin: 0;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.home-container.sunrise {
+  background: linear-gradient(135deg, 
+    #ffd6a5 0%, /* Warm peach */
+    #ffe4b5 100% /* Mellow yellow */
+  );
+}
+
+.home-container.day {
+  background: linear-gradient(135deg, 
+    #b5e2ff 0%, /* Sky blue */
+    #fff1e6 100% /* Soft peach */
+  );
+}
+
+.home-container.sunset {
+  background: linear-gradient(135deg, 
+    #ffb199 0%, /* Coral orange */
+    #ffd4b8 100% /* Light salmon */
+  );
+}
+
+.home-container.night {
+  background: linear-gradient(135deg, 
+    #c4c6ff 0%, /* Periwinkle */
+    #e6e6ff 100% /* Soft lavender */
+  );
+}
+
+h1, p {
+  color: #333;
+}
