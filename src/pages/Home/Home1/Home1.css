@@ -1,0 +1,48 @@
+.home-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5;
+}
+
+.sunrise {
+  background-color: #ffc4b7;
+}
+
+.day {
+  background-color: #b7deff;
+}
+
+.sunset {
+  background-color: #ffb7b7;
+}
+
+.night {
+  background-color: #2a2a4f;
+}
+
+h1, p {
+  color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.home-container h1 {
+  color: #f0f0f0;
+}
