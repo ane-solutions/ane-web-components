@@ -12,7 +12,17 @@ const CaseStudies = () => {
       const moveY = (clientY - window.innerHeight / 2) / 50;
 
       document.querySelectorAll('.case-card').forEach(card => {
-        card.style.transform = `translateZ(20px) rotateX(${-moveY}deg) rotateY(${moveX}deg)`;
+        const rect = card.getBoundingClientRect();
+        const cardX = rect.left + rect.width / 2;
+        const cardY = rect.top + rect.height / 2;
+        
+        const deltaX = clientX - cardX;
+        const deltaY = clientY - cardY;
+        
+        const rotateX = -deltaY / 20;
+        const rotateY = deltaX / 20;
+        
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
       });
 
       setMousePosition({ x: clientX, y: clientY });

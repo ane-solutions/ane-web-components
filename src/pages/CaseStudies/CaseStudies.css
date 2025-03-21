@@ -92,7 +92,6 @@
 }
 
 .case-card:hover {
-  transform: translateZ(20px) rotateX(5deg) rotateY(5deg);
   border-color: rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.05);
 }
